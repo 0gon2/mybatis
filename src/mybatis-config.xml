@@ -2,9 +2,11 @@
 <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" 
 "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
+   <!-- add -->
    <typeAliases>
-   <typeAlias type="model.BoardDataBean" alias="Board"/>
-   </typeAliases>
+   <typeAlias type="board.BoardDataBean" alias="Board"/>
+   </typeAliases> 
+   <!--  -->
    <environments default="development">
    <environment id="development">
 <transactionManager type="JDBC"/>
@@ -16,5 +18,6 @@
 </dataSource>
    </environment>
    </environments>
+   <!--config  -->
    <mappers><mapper resource="Board.xml"/></mappers>
 </configuration>
